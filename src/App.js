@@ -10,13 +10,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { authActions } from "./store";
 
 function App() {
-  const dispath = useDispatch();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     if(localStorage.getItem("userId")){
-      dispath(authActions.login());
+      dispatch(authActions.login());
     }
-  },[dispath])
+  },[dispatch])
 
   const isLoggedIn = useSelector((state) => state.isLoggedIn);
   console.log(isLoggedIn);

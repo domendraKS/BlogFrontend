@@ -1,5 +1,5 @@
-import { CardMedia } from '@mui/material';
 import React from 'react';
+import { CardMedia } from '@mui/material';
 
 
 const Test = (props) => {
@@ -9,9 +9,10 @@ const Test = (props) => {
     component="img"
     height="194"
     image={props.image}
-  
   />
+
   {console.log(props.image)}
+
   </div>
   )
 }
